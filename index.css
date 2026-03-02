@@ -1,99 +1,31 @@
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 2ch;
+/*
+  index.css is a common place to keep global styles,
+  which are styles that apply to the entire page.
+*/
 
-  height: 90vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  Global font styles are conventionally applied to html,
+  since the `rem` unit is based on the _root_ font.
+*/
+html {
   font-family: sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  border: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  background-color: red;
-}
-
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 3ch;
-
-  width: 100vw;
-  border: 2px;
-  border-radius: 5px;
-  border-style: solid;
-  background-color: chartreuse;
-}
-
-aside {
-  width: 100px;
-}
-
-article {
-  width: 120ch;
-}
-
-ul {
+body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+
+  display: flex;
   gap: 1ch;
-  align-items: flex-end;
-
-  list-style-type: none;
-  font-size: 3ch;
 }
-
-li {
-  
-  border: 2px;
-  border-radius: 5px;
-  border-style: solid;
-  background-color: crimson;
-  width: 100px;
-  color: white;
-  padding: 5px 5px 5px 5px;
-}
-
-.testimonial {
-  background-color: grey;
-  font-style: italic;
-}
-
-footer {
-  align-self: center;
-
-  background-color: blue;
-  border: 2px;
-  border-radius: 5px;
-  padding: 5px 150px 5px 150px;
-  font-size: 2ch;
-  font-weight: 1000;
-  color: lightgray;
-}
-
-.brand {
-  align-self: flex-end;
-
-  margin: 5px 0px 5px 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 24pt;
-}
-
-nav {
-  margin: 10px;
-} 
-
-aside {
-  margin: 5px;
-}
-
